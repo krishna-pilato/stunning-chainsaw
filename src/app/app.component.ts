@@ -36,6 +36,8 @@ export class AppComponent implements OnInit {
   // Map attribute
   map!: google.maps.Map;
 
+  title = "app";
+
   // Class constructor
   constructor(public dialog: MatDialog, public snackBar: MatSnackBar) {}
 

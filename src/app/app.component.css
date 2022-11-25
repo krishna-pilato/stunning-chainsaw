@@ -1,0 +1,47 @@
+.full {
+  border-radius: 5px;
+  margin-top: 10px;
+  display: inline-block;
+  height: 600px;
+}
+
+.full1 {
+  width: 30%;
+}
+
+.full2 {
+  width: 70%;
+}
+
+table {
+  width: 100%;
+  margin-top: 50px;
+}
+
+table tr:hover td {
+  background: #efefef;
+  cursor: pointer;
+  font-style: italic;
+}
+
+#dialog-modal {
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 1480px) {
+  .full {
+    border-radius: 5px;
+    display: block;
+    height: 600px;
+  }
+
+  .full1 {
+    width: 100%;
+  }
+
+  .full2 {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}

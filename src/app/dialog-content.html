@@ -1,0 +1,24 @@
+<h2 class="text-center">Edit your data:</h2>
+<br>
+<mat-form-field appearance="outline" style="width: 100%;">
+    <mat-label>Enter the address</mat-label>
+    <input matInput value="{{indirizzo}}" spellcheck="false" required="true">
+    <mat-icon matSuffix>my_locationn</mat-icon>
+</mat-form-field>
+<br><br>
+<mat-form-field appearance="outline" style="width: 100%;">
+    <mat-label>Enter the municipality</mat-label>
+    <input matInput value="{{comune}}" spellcheck="false" required="true">
+    <mat-icon matSuffix>pin_drop</mat-icon>
+</mat-form-field>
+<br><br>
+<button (click)="updateAndSaveData($event);" matRipple adiButton
+    style="border-radius: 10px; width: 48%;overflow: hidden; display: inline-block" mat-raised-button color="accent">
+    Edit and save
+</button>
+
+<button (click)="closeDialog();" matRipple adiButton
+    style="border-radius: 10px; width: 4 8%;margin-left: 10px; overflow: hidden; display: inline-block"
+    mat-raised-button color="primary">
+    Close dialog
+</button>

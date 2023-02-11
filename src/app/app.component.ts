@@ -3,7 +3,8 @@ import { FormControl } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Loader } from '@googlemaps/js-api-loader';
-import { } from 'googlemaps';
+import {} from 'googlemaps';
+import { Title } from '@angular/platform-browser';
 import * as $ from 'jquery';
 import { environment } from 'src/environments/environment';
 
@@ -36,10 +37,16 @@ export class AppComponent implements OnInit {
   // Map attribute
   map!: google.maps.Map;
 
-  title = "app";
+  title = 'app';
 
   // Class constructor
-  constructor(public dialog: MatDialog, public snackBar: MatSnackBar) {}
+  constructor(
+    public dialog: MatDialog,
+    public snackBar: MatSnackBar,
+    private titleService: Title
+  ) {
+    this.titleService.setTitle('Web App Title');
+  }
 
   // Angular On Init Method
   ngOnInit(): void {
